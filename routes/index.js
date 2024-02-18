@@ -8,7 +8,7 @@ var router = express.Router();
 /* GET home page. get saved text */
 router.get('/', async function(req, res, next) {
   let data_file = await s3.getObject({
-    Bucket: "cyclic-plain-marlin-us-west-2",
+    Bucket: "cyclic-yellow-giraffe-belt-eu-north-1",
     Key: "saved_data.json"
   }).promise();
   // console.log("test / ", data_file);
